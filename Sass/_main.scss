@@ -1,0 +1,129 @@
+#main-content {
+    width: 100%;
+    height: 100vh;
+
+    #content {
+        @include flex(column, center, center);
+        #title-page {
+            color: #fff;
+            font-size: 2em;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        #info {
+            @include flex(row, center, center);
+
+            #photo {
+
+                #shadow {
+                    background-color: rgb(46, 45, 45);
+                    margin: 20px;
+                    
+                    img {
+                        width: 200px;
+                        margin: -30px 15px 25px 15px;
+                        transform: translateY(50px);
+                    }
+                }
+            }
+            
+            #description {
+                color: #fff;
+                width: 50%;
+                
+                h2 {
+                    font-size: 2.5em;
+                    margin: 10px;
+                    padding: 5px;
+                }
+                
+                h3 {
+                    font-size: 1.5em;
+                    margin: 10px;
+                    padding: 5px;
+                }
+
+                p {
+                    margin: 10px;
+                    padding: 10px;
+                }
+            }
+
+            #skills {
+                @include flex(row, center, center);
+                color: #fff;
+                margin-top: 30px;
+                padding: 20px;
+                
+                div {
+                    @include flex(column, center, center);
+
+                    i {
+                        font-size: 10em;
+                        margin: 10px;
+                        padding: 10px;
+                    }
+
+                    .fa-html5 {
+                        color: #F0652A;
+                    }
+                    .fa-css3-alt {
+                        color: #379AD6;
+                    }
+                    .fa-js {
+                        color: #F0DB4F;
+                    }
+                    .fa-git-alt {
+                        color: #F0652A;
+                    }
+                    .fa-node-js {
+                        color: #90C53F;
+                    }
+                    .fa-react {
+                        color: #61DAFB;
+                    }
+                }
+                
+            }
+
+            #proyects {
+                @include flex(row, center, center);
+                flex-wrap: wrap;
+                
+                .proyect {
+                    @include flex(column, center, center);
+                    background-color: #000;
+                    margin: 5px 15px 5px 15px;
+
+                    img {
+                        width: 500px;
+                    }
+
+                    p {
+                        color: #fff;
+                        padding: 10px;
+                    }
+                }
+            }
+
+            #contact {
+                @include flex(column, center, center);
+                
+                .social {
+                    @include flex(row, center, center);
+                    padding: 10px;
+
+                    i {
+                        font-size: 4em;
+                    }
+
+                    p {
+                        margin: 10px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

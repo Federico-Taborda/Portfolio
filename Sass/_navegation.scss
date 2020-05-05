@@ -1,0 +1,25 @@
+#navegation {
+    @include flex(row, flex-end, center);
+    background-color: black;
+    
+    #links {
+        @include flex(row, center, center);
+        text-decoration: none;
+        
+        li {
+            margin: 10px;
+            padding: 5px;
+            border-bottom: 2px solid #000;
+
+            &:hover {
+                border-bottom: 2px solid #2ecc71;
+            }
+
+            a {
+                font-size: 1.3em;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
