@@ -133,6 +133,13 @@ a:visited {
   font-size: 10em;
   margin: 10px;
   padding: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#main-content #content #info #skills div i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #main-content #content #info #skills div .fa-html5 {
@@ -193,6 +200,11 @@ a:visited {
           align-items: center;
   background-color: #000;
   margin: 5px 15px 5px 15px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #main-content #content #info #proyects .proyect img {
@@ -202,6 +214,14 @@ a:visited {
 #main-content #content #info #proyects .proyect p {
   color: #fff;
   padding: 10px;
+}
+
+#main-content #content #info #proyects .proyect p:hover {
+  cursor: pointer;
+}
+
+#main-content #content #info #proyects .proyect:hover {
+  border-top: 2px solid #2ecc71;
 }
 
 #main-content #content #info #contact {
@@ -284,6 +304,8 @@ a:visited {
   margin: 10px;
   padding: 5px;
   border-bottom: 2px solid #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #navegation #links li:hover {
