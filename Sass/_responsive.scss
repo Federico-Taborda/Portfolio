@@ -1,7 +1,145 @@
+@media (max-width: 1360px) {
+    #main-content {
+        #content {
+    
+            #info {
+
+                #proyects {
+
+                    .proyect {
+                        img {
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    #main-content {
+        #content {
+            height: auto;
+
+            #info {
+                
+                #skills {
+                    flex-wrap: wrap;
+
+                    div {
+                        i {
+                            font-size: 8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 830px) {
-    #info {
-        background-color: red;
-        display: flex;
-        flex-direction: column;
+    #main-content {
+        height: auto;
+
+        #navegation {
+            @include flex(row, center, center);
+        }
+        
+        #content {
+
+            #info {
+                @include flex(column, center, center);
+
+                #photo {
+                    margin-bottom: 40px;
+                }
+
+                #description {
+                    @include flex(column, center, center);
+
+                    h2 {
+                        font-size: 2em;
+                    }
+                }
+
+                #skills {
+                    @include flex(column, center, center);
+                }
+
+                #proyects {
+                    @include flex(column, center, center);
+                }
+
+                #contact {
+                    .social {
+                        @include flex(column, center, center);
+
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    #main-content {
+        
+        #navegation {
+            #links {
+                @include flex(column, center, center);
+
+                li {
+                    a {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        #content {
+
+            #title-page {
+                font-size: 1.5em;
+            }
+    
+            #info {
+
+                #description {
+                    width: 100%;
+                    p {
+                    }
+                }
+    
+                #skills {
+
+                    div {
+                        @include flex(row, center, center);
+                        i {
+                            font-size: 4em;
+                        }
+                    }
+                }
+
+                #proyects {
+                    .proyect {
+                        img {
+                            width: 200px;
+                        }
+                    }
+                }
+
+                #contact {
+                    .social {
+                        i {
+                            font-size: 3em;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
