@@ -91,7 +91,7 @@
             }
 
             #proyects {
-                @include flex(row, center, center);
+                @include flex(row, start, center);
                 flex-wrap: wrap;
                 
                 .proyect {
